@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="${request.locale_name}">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Adam Castle, HTML5, CSS3, Python, Plone, Django, Pyramids">
+    <meta name="author" content="Pylons Project">
+    <link rel="shortcut icon" href="${request.static_url('abortretryfail:static/pyramid-16x16.png')}">
+    <link rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" />
+    <title>Abort Retry Fail - Adam Castle</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="//oss.maxcdn.com/libs/twitter-bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this scaffold -->
+    <link href="${request.static_url('abortretryfail:static/theme.css')}" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="//oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
+    <script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/1.5.2/css/ionicons.min.css">
+    <link rel="stylesheet" href="${request.static_url('abortretryfail:static/Leaflet.awesome-markers/dist/leaflet.awesome-markers.css')}">
+    <script src="${request.static_url('abortretryfail:static/Leaflet.awesome-markers/dist/leaflet.awesome-markers.min.js')}"></script>
+
+    <script src="${request.static_url('abortretryfail:static/woii.json')}"></script>
+    <style>
+    </style>
+
+  </head>
+
+  <body>
+    <header><span class="font-normal"><a href="/">Abort, Retry, Fail?_</a></span></header>
+
+    <div class="">
+        <div id="map"></div>
+    </div>
+
+    <script src="//oss.maxcdn.com/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="//oss.maxcdn.com/libs/twitter-bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    <script>
+
+
+        var redMarker = L.AwesomeMarkers.icon({
+            markerColor: 'red',
+            icon: 'fire'
+        });
+        var yellowMarker = L.AwesomeMarkers.icon({
+            markerColor: 'orange',
+            icon: 'flash'
+        });
+
+        var map = L.map('map').setView([52.379189, 4.899431], 12);
+        L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+            maxZoom: 13,
+            attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        for (incident in data) {
+            if (data[incident]['CENTERLAT1']) {
+                if (data[incident]['CENTERLNG1']) {
+                    if (data[incident]['SELECTIE'] == 'EXPLOSIEF') {
+                        L.marker([data[incident]['CENTERLAT1'], data[incident]['CENTERLNG1']], {icon: redMarker}).addTo(map)
+        			        .bindPopup(data[incident]['Omschrijving']).openPopup();
+    	            }
+    	            else {
+                        L.marker([data[incident]['CENTERLAT1'], data[incident]['CENTERLNG1']], {icon: yellowMarker}).addTo(map)
+        			        .bindPopup(data[incident]['Omschrijving']).openPopup();
+    	            }
+                }
+    		}
+        }
+
+    </script>
+
+  </body>
+</html>

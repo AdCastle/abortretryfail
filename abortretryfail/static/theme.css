@@ -167,3 +167,16 @@ header {
     margin-top: 20px;
   }
 }
+
+header a {
+    color: #fff;
+}
+
+.leaflet-popup-content-wrapper {
+    color: #000;
+}
+
+#map {
+    height: 800px;
+    width: 100%
+}
