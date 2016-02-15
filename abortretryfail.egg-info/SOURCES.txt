@@ -18,4 +18,4 @@ abortretryfail/static/pyramid-16x16.png
 abortretryfail/static/pyramid.png
 abortretryfail/static/theme.css
 abortretryfail/static/theme.min.css
-abortretryfail/templates/mytemplate.pt
+abortretryfail/templates/template.pt
