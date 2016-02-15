@@ -28,10 +28,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="template.pt" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="template.pt" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/abortretryfail/templates/maps/ww2-amsterdam/template.pt">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="58" column="64" selection-start="2540" selection-end="2540" vertical-scroll-proportion="0.42413163" vertical-offset="638" max-vertical-offset="1335">
+            <state line="58" column="64" selection-start="2540" selection-end="2540" vertical-scroll-proportion="-8.923077" vertical-offset="638" max-vertical-offset="1335">
               <folding />
             </state>
           </provider>
@@ -55,10 +55,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="__init__.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="__init__.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/abortretryfail/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="63" selection-start="394" selection-end="394" vertical-scroll-proportion="-6.0" vertical-offset="0" max-vertical-offset="285">
+            <state line="10" column="40" selection-start="353" selection-end="371" vertical-scroll-proportion="0.26737967" vertical-offset="0" max-vertical-offset="561">
               <folding />
             </state>
           </provider>
@@ -289,13 +289,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/abortretryfail/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="63" selection-start="394" selection-end="394" vertical-scroll-proportion="-6.0" vertical-offset="0" max-vertical-offset="285">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/abortretryfail/static/theme.min.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="573">
@@ -319,7 +312,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/abortretryfail/templates/maps/ww2-amsterdam/template.pt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="64" selection-start="2540" selection-end="2540" vertical-scroll-proportion="0.42413163" vertical-offset="638" max-vertical-offset="1335">
+        <state line="58" column="64" selection-start="2540" selection-end="2540" vertical-scroll-proportion="-8.923077" vertical-offset="638" max-vertical-offset="1335">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/abortretryfail/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="40" selection-start="353" selection-end="371" vertical-scroll-proportion="0.26737967" vertical-offset="0" max-vertical-offset="561">
           <folding />
         </state>
       </provider>
