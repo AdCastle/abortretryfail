@@ -18,4 +18,16 @@ abortretryfail/static/pyramid-16x16.png
 abortretryfail/static/pyramid.png
 abortretryfail/static/theme.css
 abortretryfail/static/theme.min.css
+abortretryfail/static/Leaflet.awesome-markers/dist/leaflet.awesome-markers.css
+abortretryfail/static/Leaflet.awesome-markers/dist/leaflet.awesome-markers.js
+abortretryfail/static/Leaflet.awesome-markers/dist/leaflet.awesome-markers.min.js
+abortretryfail/static/Leaflet.awesome-markers/dist/images/markers-matte.png
+abortretryfail/static/Leaflet.awesome-markers/dist/images/markers-matte@2x.png
+abortretryfail/static/Leaflet.awesome-markers/dist/images/markers-plain.png
+abortretryfail/static/Leaflet.awesome-markers/dist/images/markers-shadow.png
+abortretryfail/static/Leaflet.awesome-markers/dist/images/markers-shadow@2x.png
+abortretryfail/static/Leaflet.awesome-markers/dist/images/markers-soft.png
+abortretryfail/static/Leaflet.awesome-markers/dist/images/markers-soft@2x.png
 abortretryfail/templates/template.pt
+abortretryfail/templates/maps/ww2-amsterdam/index.html
+abortretryfail/templates/maps/ww2-amsterdam/template.pt
